@@ -15,21 +15,22 @@ def get(url, raw=False):
     return body if raw else json.loads(body)
 
 
-def oss(limit=8):
-    q = f"author:{USER} type:pr -user:{USER} " + " ".join(f"-org:{o}" for o in EXCLUDE_ORGS)
-    items = get("https://api.github.com/search/issues?per_page=50&sort=created&q=" + urllib.parse.quote(q))["items"]
+def oss(limit=2):
+    base = f"author:{USER} type:pr -user:{USER} " + " ".join(f"-org:{o}" for o in EXCLUDE_ORGS)
     lines = []
-    for i in items:
-        merged = i["pull_request"].get("merged_at")
-        if i["state"] == "closed" and not merged:
-            continue  # rejected/abandoned PRs aren't worth showing
-        repo = i["repository_url"].split("/repos/")[1]
-        icon = "✅" if merged else "🟡"
-        lines.append(f"- {icon} [{repo}#{i['number']}]({i['html_url']}) — {i['title']}")
-    return lines[:limit]
+    # merged first (newest merge), then open (newest created)
+    for icon, qual, sort in [("✅", "is:merged", "updated"), ("🟡", "is:open", "created")]:
+        url = f"https://api.github.com/search/issues?per_page=10&sort={sort}&q=" + urllib.parse.quote(f"{base} {qual}")
+        items = get(url)["items"]
+        if qual == "is:merged":
+            items.sort(key=lambda i: i["pull_request"]["merged_at"], reverse=True)
+        for i in items[:limit]:
+            repo = i["repository_url"].split("/repos/")[1]
+            lines.append(f"- {icon} [{repo}#{i['number']}]({i['html_url']}) — {i['title']}")
+    return lines
 
 
-def til(limit=5):
+def til(limit=3):
     tree = get(f"https://api.github.com/repos/{USER}/TIL/git/trees/main?recursive=1")["tree"]
     # post pages are named <category>/<YYMMDD>-<slug>.html
     posts = [t["path"] for t in tree if re.fullmatch(r"[\w-]+/\d{6}-[\w-]+\.html", t["path"])]
