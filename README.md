@@ -25,5 +25,5 @@ Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 #### ✍️ Latest TIL
 
 <!-- TIL:START -->
-- [메모리 request=limit이 노드를 지키는 이유 — QoS 클래스와 OOM](https://jang-hs.github.io/TIL/mlops/260806-memory-request-limit-oom.html) <sub>2026-08-06</sub>
+- [Celery 워커가 태스크 하나 못 받고 죽을 때 — prefork와 OTel gRPC exporter](https://jang-hs.github.io/TIL/backend/260910-celery-prefork-otel-grpc-fork.html) <sub>2026-09-10</sub>
 <!-- TIL:END -->
