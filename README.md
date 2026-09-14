@@ -1,6 +1,6 @@
 ### Hi, I'm Jade 👋
 
-Platform / MLOps Engineer at [Pyler](https://pyler.tech) · Seoul, Korea
+Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 
 - ☸️ Running GPU & ML workloads on Kubernetes — Ray/KubeRay, Kueue
 - 🔭 Observability with OpenTelemetry & SigNoz, infra as code with Terraform
@@ -26,10 +26,4 @@ Platform / MLOps Engineer at [Pyler](https://pyler.tech) · Seoul, Korea
 
 <!-- TIL:START -->
 - [메모리 request=limit이 노드를 지키는 이유 — QoS 클래스와 OOM](https://jang-hs.github.io/TIL/mlops/260806-memory-request-limit-oom.html) <sub>2026-08-06</sub>
-- [CI 빌더가 사설 레지스트리 인증서를 신뢰하지 못할 때 — buildx와 dind](https://jang-hs.github.io/TIL/mlops/260805-buildx-private-registry-ca.html) <sub>2026-08-05</sub>
-- [Django 데이터 마이그레이션에서 모델을 import 하면 안 되는 이유](https://jang-hs.github.io/TIL/backend/260803-django-data-migration-historical-models.html) <sub>2026-08-03</sub>
 <!-- TIL:END -->
-
----
-
-📝 [Blog (TIL)](https://jang-hs.github.io/TIL/)

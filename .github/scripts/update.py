@@ -30,7 +30,7 @@ def oss(limit=2):
     return lines
 
 
-def til(limit=3):
+def til(limit=1):
     tree = get(f"https://api.github.com/repos/{USER}/TIL/git/trees/main?recursive=1")["tree"]
     # post pages are named <category>/<YYMMDD>-<slug>.html
     posts = [t["path"] for t in tree if re.fullmatch(r"[\w-]+/\d{6}-[\w-]+\.html", t["path"])]
