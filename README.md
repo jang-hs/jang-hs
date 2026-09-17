@@ -16,10 +16,10 @@ Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 #### 🔧 Open Source Contributions
 
 <!-- OSS:START -->
+- ✅ [python/cpython#157610](https://github.com/python/cpython/pull/157610) — gh-151950: Fix Sphinx reference warnings in `Doc/library/importlib.rst`
 - ✅ [python/cpython#157295](https://github.com/python/cpython/pull/157295) — gh-115426: Fix the socket object close() cross-references
-- ✅ [tale/headplane#610](https://github.com/tale/headplane/pull/610) — feat(users): validate usernames before creating or renaming
-- 🟡 [python/cpython#157610](https://github.com/python/cpython/pull/157610) — gh-151950: Fix Sphinx reference warnings in `Doc/library/importlib.rst`
 - 🟡 [SigNoz/charts#922](https://github.com/SigNoz/charts/pull/922) — fix(zookeeper): fall back to global.clusterDomain
+- 🟡 [SigNoz/signoz-otel-collector#905](https://github.com/SigNoz/signoz-otel-collector/pull/905) — fix(signozkafkareceiver): allow Shutdown without Start
 <!-- OSS:END -->
 
 #### ✍️ Latest TIL
