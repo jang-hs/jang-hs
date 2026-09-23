@@ -16,10 +16,10 @@ Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 #### 🔧 Open Source Contributions
 
 <!-- OSS:START -->
+- ✅ [python/peps#5138](https://github.com/python/peps/pull/5138) — PEP 526: Fix name mangling example
 - ✅ [python/cpython#157610](https://github.com/python/cpython/pull/157610) — gh-151950: Fix Sphinx reference warnings in `Doc/library/importlib.rst`
-- ✅ [python/cpython#157295](https://github.com/python/cpython/pull/157295) — gh-115426: Fix the socket object close() cross-references
+- 🟡 [argoproj/argo-workflows#17063](https://github.com/argoproj/argo-workflows/pull/17063) — fix(validate): skip validation of templateRef with a dynamic name. Fixes #16008
 - 🟡 [SigNoz/charts#922](https://github.com/SigNoz/charts/pull/922) — fix(zookeeper): fall back to global.clusterDomain
-- 🟡 [SigNoz/signoz-otel-collector#905](https://github.com/SigNoz/signoz-otel-collector/pull/905) — fix(signozkafkareceiver): allow Shutdown without Start
 <!-- OSS:END -->
 
 #### ✍️ Latest TIL
