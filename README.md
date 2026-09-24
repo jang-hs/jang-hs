@@ -16,8 +16,8 @@ Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 #### 🔧 Open Source Contributions
 
 <!-- OSS:START -->
+- ✅ [argoproj/argo-rollouts#5056](https://github.com/argoproj/argo-rollouts/pull/5056) — fix(cli): avoid send on closed channel panic in status watch. Fixes #4372
 - ✅ [python/peps#5138](https://github.com/python/peps/pull/5138) — PEP 526: Fix name mangling example
-- ✅ [python/cpython#157610](https://github.com/python/cpython/pull/157610) — gh-151950: Fix Sphinx reference warnings in `Doc/library/importlib.rst`
 - 🟡 [argoproj/argo-workflows#17063](https://github.com/argoproj/argo-workflows/pull/17063) — fix(validate): skip validation of templateRef with a dynamic name. Fixes #16008
 - 🟡 [SigNoz/charts#922](https://github.com/SigNoz/charts/pull/922) — fix(zookeeper): fall back to global.clusterDomain
 <!-- OSS:END -->
