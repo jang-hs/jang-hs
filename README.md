@@ -18,8 +18,8 @@ Platform / MLOps Engineer at [PYLER](https://pyler.tech) · Seoul, Korea
 <!-- OSS:START -->
 - ✅ [argoproj/argo-rollouts#5056](https://github.com/argoproj/argo-rollouts/pull/5056) — fix(cli): avoid send on closed channel panic in status watch. Fixes #4372
 - ✅ [python/peps#5138](https://github.com/python/peps/pull/5138) — PEP 526: Fix name mangling example
+- 🟡 [python/cpython#158484](https://github.com/python/cpython/pull/158484) — gh-151943: Fix Sphinx reference warnings in `Doc/library/xmlrpc.client.rst`
 - 🟡 [argoproj/notifications-engine#479](https://github.com/argoproj/notifications-engine/pull/479) — fix(github): use the derived API base URL for app token requests
-- 🟡 [argoproj/argo-workflows#17063](https://github.com/argoproj/argo-workflows/pull/17063) — fix(validate): skip validation of templateRef with a dynamic name. Fixes #16008
 <!-- OSS:END -->
 
 #### ✍️ Latest TIL
